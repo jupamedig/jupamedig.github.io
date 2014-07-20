@@ -1,0 +1,21 @@
+body {
+	background-color: coral;
+}
+
+.header {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #FFFF99;
+}
+
+p {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+}
+
+li {
+	color: white;
+}
+
+#four_count {
+	font-size: 1.5em;
+}
