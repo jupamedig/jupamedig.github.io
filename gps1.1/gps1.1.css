@@ -1,0 +1,52 @@
+/* include your css here */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+header {
+	text-align:center; 
+	background-color:#f5f5dc;
+	color: midnightblue;
+	padding:1.2em;
+	border-bottom: .4em solid #DCDCC6;
+}
+
+header h1 {
+	font-family:'Audiowide';
+}
+
+footer {
+	background-color:#f5f5dc;
+	text-align:center;
+	color: midnightblue;
+	border-top: .4em solid #DCDCC6;
+	padding:1em;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 30px;
+	width: 100%;
+}
+
+article {
+	width:70%;
+	margin: 2em auto;
+	background: white;
+	border-radius: 20px;
+	padding: 40px;
+}
+
+body {
+	width:100%;
+	margin: 0 auto;
+	background-image: url('http://upload.wikimedia.org/wikipedia/commons/1/16/Sherwin_Range,_Benton_Crossing.jpg');
+	background-repeat: no-repeat;
+	margin: 0 auto 30px; /* bottom = footer height */
+}
+
+#last {
+	margin-bottom: 100px;
+}
+
