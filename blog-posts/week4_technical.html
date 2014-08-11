@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Juantanamera</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <header>
+    <a href="/index.html">
+      <div id="logo">
+        <h1><span id="juan">JUAN </span><span id="tanamera">tanamera</span></h1>
+        <h2>dancing with code</h2>
+      </div>
+    </a>
+
+    <nav>
+      <a href="/blog.html"><div class="navigation">blog</div></a>
+      <a href="/projects.html"><div class="navigation">projects</div></a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <article>
+      <div class="date">8.10.2014</div>
+      <h1>map { |obj| block }</h1>
+
+      <p>The main idea behind "enumerable" in Ruby, I think, is that it enables us to access individual elements in a collection and do something to them if we so choose.</p>
+
+      <p><code>#map</code> is an enumerator in the enumerable module for this reason. When applied to a collection of elements, it will execute a block of code, if specified, on each element and return a new array of the resulting elements.</p>
+
+      <p>Let's take a look at some examples...</p>
+
+      <h2>example 1:</h2>
+
+      <p><code>(1..5).map { |i| i**2 }</code></p>
+      <p><code># => [1, 4, 9, 16, 25]</code></p>
+
+      <h2>example 2:</h2>
+
+      <p><code>["a","b","c","d","e"].map { |i| i*3 }</code></p>
+      <p><code># => ["aaa", "bbb", "ccc", "ddd", "eee"]</code></p>
+
+      <h2>example 3:</h2>
+
+      <p><code>[1, "patayda", 2, "patayda", 3, "patayda", 4].map { |i| i.to_s }</code></p>
+      <p><code># => ["1", "patayda", "2", "patayda", "3", "patayda", "4"]</code></p>
+
+      <h2>example 4:</h2>
+
+      <p><code>(1..4).map { "guau" }</code></p>
+      <p><code># => ["guau", "guau", "guau", "guau"]</code></p>
+
+      <h2>*note</h2>
+
+      <p><code>#map</code> works the same exact way that <code>#collect</code> works.</p>
+      <p>Also, if no block is provided when calling the method, an enumerator will be returned. So, for example, calling this:</p>
+
+      <p><code>[1, 2, 3, 4].map</code></p>
+
+      <p>will return this:</p>
+      <p><code>&#60;Enumerator: [1, 2, 3, 4]:map&#62;</code></p>
+
+      <p>and that's all i have to say about tha'at</p>
+
+    </article>
+
+  </div>
+
+  <footer>
+  </footer>
+
+</body>
+
+</html>
