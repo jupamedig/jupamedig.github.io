@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Juantanamera</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <header>
+    <a href="/index.html">
+      <div id="logo">
+        <h1><span id="juan">JUAN </span><span id="tanamera">tanamera</span></h1>
+        <h2>dancing with code</h2>
+      </div>
+    </a>
+
+    <nav>
+      <a href="/blog.html"><div class="navigation">blog</div></a>
+      <a href="/projects.html"><div class="navigation">projects</div></a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <article>
+      <div class="date">8.18.2014</div>
+
+      <h1>You stay Classy, San Diago</h1>
+
+      <p>As an Object-Oriented Programming language, Ruby pretty much treats everything as an object. While it may seem confusing at first, it actually makes things easier in a lot of ways. Objects serve as the programmer's agents or proxies, and the programmer can tell them to do specific things and interact with each other in certain ways. Ultimately, the idea is to more easily manage data.</p>
+
+      <h2>Movie Rental Store</h2>
+
+      <p>So let's take it back to the 20th century... And let's say that you have a movie rental store. And you want an easy way to manage your movies. As you might imagine, your movies&ndash;while all different&ndash;all share properties that you might want to keep track of and manipulate. For example, they each have a title, they each probably have actors which may or may not be noteworthy, they can each get checked out and returned, etc.</p>
+
+      <p>Since you're going to have a lot of movie objects that you'll want to manage in a similar way, it makes sense to create a class for these objects. A class serves as a blueprint for the objects of that class. The class is used to construct (or 'instantiate') its objects.</p>
+
+      <p>Each object is an instance of the class it's in. It has properties that it knows about itself and that can be referred to in other sections of the class. These properties, which are identified by the @ symbol, are known as "instance variables." So in our movie rental example, each movie object knows its title, its main actors, and its status (i.e., whether it's rented or not). Instance variables can be referenced anywhere in the class. For example, they can be referenced in methods that lie outside of the method where they're defined. By the way, by setting the 'actors' and 'status' arguments in the intialize method equal to "[]" and "in" respectively, we're making those the default values upon instantiation unless otherwise specified.</p>
+
+      <p>Inside a class, we can also specify what we can do with these objects by defining methods. So if a movie gets checked out, we can call the check_out method on it, which changes that movie object's @status to "out." Similarly, if a movie gets returned, its @status gets set to "in." If we want to check to see if our movie object is checked out, we can call the check_status method on that object. Finally, if we want to know who's in the movie, we can call the who_in_it method on the movie object, and it'll tell us. </p>
+
+      <img src="/images/MovieRentals-class-code.png">
+
+      <h2>In Practice...</h2>
+
+      <p>So we're just opening our movie rental store, and we decide to start by adding four cinematic masterpieces to our collection. Let's add those movies with the 'new' method...</p>
+
+      <img src="/images/MovieRentals-new-objects.png" alt="code for our MovieRentals class" class="centered">
+
+      <p>Now, of course, someone instantly snatches up "She's the Man." So we have to call the rented method on it. Then, when we check_status, we'll see that it is in fact checked out.</p>
+
+      <img src="/images/MovieRentals-checkout.png" alt="code screenshot" class="centered">
+
+      <p>If we want to see who are the main actors in our movies, we can just call who_in_it? on each movie.</p>
+
+      <img src="/images/MovieRentals-who-in-it.png" alt="code screenshot" class="centered">
+
+      <p>Now after a few hours, our customer returns "She's the Man." So we have to make sure to call the return method on it. Subsequently calling check_status on that movie confirms that it's available for rental.</p>
+
+      <img src="/images/MovieRentals-returned.png" alt="code screenshot" class="centered">
+
+      <p>So that should give some idea of how ruby classes work. And that's all I have to say about tha'at.</p>
+
+    </article>
+
+  </div>
+
+  <footer>
+  </footer>
+
+</body>
+
+</html>
