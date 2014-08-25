@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Juantanamera</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <header>
+    <a href="/index.html">
+      <div id="logo">
+        <h1><span id="juan">JUAN </span><span id="tanamera">tanamera</span></h1>
+        <h2>dancing with code</h2>
+      </div>
+    </a>
+
+    <nav>
+      <a href="/blog.html"><div class="navigation">blog</div></a>
+      <a href="/projects.html"><div class="navigation">projects</div></a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <article>
+      <div class="date">08.24.2014</div>
+      <h1>Blocks, Procs, and Lambdas</h1>
+
+      <h2>Blocks</h2>
+
+      <p>When learning Ruby, a common refrain is that "everything is an object." As it turns out this is not entirely true. One of the rare exceptions is our friend, the block. A block is just a bit of code that can be executed. The reason blocks aren't considered objects is because they can't be saved to a variable, and they don't have all the functionality in an object's repertoire.</p>
+
+      <p>As for syntax, a block is denoted by curly braces (<code>{}</code>) or by <code>do</code>...<code>end</code>. Some common methods that are followed by a block are <code>#each</code>, <code>#times</code>, and <code>#collect</code>, but there are a ton of others.</p>
+
+      <h2>Procs</h2>
+
+      <p>Let's say you have a block of code that you intend to use several times in a program. Wouldn't it be cool if you could save it to a variable and just use that variable instead of having to write out that bit of code every time you wanted to execute it? Well, that's what procs are for.</p>
+
+      <p>Creating procs is very similar to creating other objects. All you have to do is call <code>Proc.new</code> and pass in a block of code. So for example, </p>
+
+      <p><code>double = Proc.new { |i| i * 2 }</code></p>
+      <p><code>[1, 2, 3].map(&double)  # => [2, 4, 6]</code></p>
+      <p>(the "&" in front of the Proc variable name just converts the proc into a block since that's what #map normally takes)</p>
+
+      <p>There's another useful way to call a Proc, and that's with the #call method. Check it,</p>
+
+      <p><code>jamaican = Proc.new { puts "whatta gwan" }</code></p>
+      <p><code>jamaican.call  # => "whatta gwan"</code></p>
+
+
+      <h2>Lambdas</h2>
+
+      <p>With the exception of a couple of small details, lambdas and procs are essentially the same thing. There's a slight difference in how you create new procs and lambdas, as seen here:</p>
+
+      <p><code>jamaican = Proc.new { puts "whatta gwan" }</code></p>
+      <p><code>jamaican = lambda { puts "whatta gwan" }</code></p>
+
+      <p>Other than that, lambdas are aware of the number of arguments that gets passed to it while procs are not. Lambdas will throw an error if they get the wrong number of arguments; procs make do by either ignoring extra arguments or adding nil values if there aren't enough.</p>
+
+      <p>And finally, when a lambda returns whatever value it's supposed to return, it passes control back to the method that called it. So if the calling method then returns another value (after the lambda), it will do so unimpeded. Procs on the other hand will return and not pass control back to the calling method. So once the proc returns its value, the calling method does not return anything else that follows the proc, even if it's written in such a way that suggests that a value should be returned.</p>
+
+    </article>
+
+  </div>
+
+  <footer>
+  </footer>
+
+</body>
+
+</html>
