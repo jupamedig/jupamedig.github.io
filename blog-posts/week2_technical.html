@@ -2,27 +2,26 @@
 <html>
 
 <head>
-	<title>Juantanamera</title>
+	<title>Dancing With Code</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/reset.css">
-	<link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/stylesheet.css">
-	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
 
 	<header>
 		<a href="/index.html">
-			<div id="logo">
-				<h1><span id="juan">JUAN </span><span id="tanamera">tanamera</span></h1>
-				<h2>dancing with code</h2>
-			</div>
+			<h1 class="header_column">DANCING WITH CODE</h1>
 		</a>
 
 		<nav>
-			<a href="/blog.html"><div class="navigation">blog</div></a>
-			<a href="/projects.html"><div class="navigation">projects</div></a>
+			<div class="header_column nav_container">
+				<a href="/blog.html"><div class="nav_element" id="active">BLOG</div></a>
+				<a href="/projects.html"><div class="nav_element">PROJECTS</div></a>
+			</div>
 		</nav>
 	</header>
 
@@ -51,23 +50,23 @@
 
 			<p>Block elements, on the other hand, by default take up as much horizontal space as they can. They can't exist on a line with text or any other elements on it (unless the block element gets "floated," but that's a separate conversation). However unlike inline elements, you can specify their height and width. </p>
 
-			<p>Some commonly used block elements are <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;div&gt;</code> and <code>&lt;section&gt;</code>.</p>		
+			<p>Some commonly used block elements are <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;div&gt;</code> and <code>&lt;section&gt;</code>.</p>
 
 			<div class="codeblock">
 				<code>
 					blah blah blah blah blah blah blah blah blah. Here's an example of a block element <div id="bigrect"></div> blah blah blah blah blah blah blah blah blah
 				</code>
-			</div>	
+			</div>
 
 			<h2>Inline-Block Elements</h2>
 
-			<p>And then there's the inline-block element. Like an inline element, it's able to stay on the same row with text and other inline elements. And like a block element, it can take a specified height and width.</p> 
+			<p>And then there's the inline-block element. Like an inline element, it's able to stay on the same row with text and other inline elements. And like a block element, it can take a specified height and width.</p>
 
 			<div class="codeblock">
 				<code>
 					blah blah blah blah blah blah blah blah blah. And finally, here's an example of an inline-block element <div id="bigrect_inline"></div> blah blah blah blah blah blah blah blah blah
 				</code>
-			</div>	
+			</div>
 
 			<p>To make an element inline-block, you just have to give its CSS display property the value of "inline-block". Similarly, you can turn an inline element into a block element just by setting the corresponding CSS display value to "block".</p>
 
