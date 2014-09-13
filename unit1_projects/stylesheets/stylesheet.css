@@ -206,9 +206,11 @@ footer {
   display: inline-block; /* Chrome 19 was weird with clickability without this */
   color: #00CC66;
   float: right;
-  line-height: 50px;
   height: 50px;
   width: 100px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .screen-reader-text { /* Reusable, toolbox kind of class */
