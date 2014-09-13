@@ -172,7 +172,7 @@ article {
 	text-align: center;
 }
 
-article p, article h1, article h2, .codeblock, .date, .need_break {
+article p, article h1, article h2, .codeblock, .date {
 	margin: 30px 50px;
 }
 
