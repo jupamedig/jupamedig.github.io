@@ -15,10 +15,10 @@ body {
 /*********** HEADER / NAV ***********/
 
 header {
-	background-color: rgba(64, 64, 64, .9);
+	background-color: rgba(64, 64, 64, .85);
 	height: 75px;
 	line-height: 75px;
-	border: 5px solid rgba(64, 64, 64, .9);
+	border-bottom: 5px solid rgba(64, 64, 64, .85);
 }
 
 header h1 {
@@ -67,8 +67,8 @@ header a {
 	font-family: Consolas,Monaco,'Lucida Console',Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,'Courier New';
 	font-size: 2.2em;
 	font-weight: 400;
-	background-color: rgba(64, 64, 64, .9);
-	border: 5px solid rgba(64, 64, 64, .9)
+	background-color: rgba(64, 64, 64, .85);
+	border: 5px solid rgba(64, 64, 64, .85)
 }
 
 #true {
@@ -89,7 +89,7 @@ article a {
 }
 
 article a:hover {
-	color: #2185A6;
+	color: #1E7895;
 }
 
 .container {
@@ -109,7 +109,9 @@ article {
 	color: #404040;
 	background-color: white;
 	margin: 0 auto 50px;
-	padding: 30px;
+	width: 100%;
+  height: 100%;
+  padding-top: 30px;
 	min-height: 400px;
 }
 
@@ -180,7 +182,8 @@ article h1 {
 }
 
 article h2 {
-	color: #3399cc;
+  font-size: 1.2em;
+	color: #1E7895;
 }
 
 code {
@@ -239,10 +242,17 @@ footer {
   .container {
   	width: 100%;
   }
+  article{
+    width: 100%;
+    font-size: .8em;
+  }
   .icon-alone {
     float:none;
     text-align: center;
     width: 30%;
+  }
+  article p, article h1, article h2, .codeblock, .date {
+  margin: 30px 20px;
   }
 }
 
