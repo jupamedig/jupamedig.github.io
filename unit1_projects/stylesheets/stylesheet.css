@@ -164,7 +164,6 @@ article {
 
 
 .need_break {
-	padding-bottom: 30px;
 	border-bottom: 2px solid coral;
 }
 
@@ -173,7 +172,7 @@ article {
 	text-align: center;
 }
 
-article p, article h1, article h2, .codeblock, .date {
+article p, article h1, article h2, .codeblock, .date, .need_break {
 	margin: 30px 50px;
 }
 
