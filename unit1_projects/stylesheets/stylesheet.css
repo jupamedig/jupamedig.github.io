@@ -209,7 +209,6 @@ footer {
   height: 50px;
   width: 100px;
   line-height: 60px;
-  text-align: center;
 }
 
 .screen-reader-text { /* Reusable, toolbox kind of class */
@@ -242,6 +241,8 @@ footer {
   }
   .icon-alone {
     float:none;
+    text-align: center;
+    width: 33%;
   }
 }
 
