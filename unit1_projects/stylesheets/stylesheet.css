@@ -241,7 +241,8 @@ footer {
   }
   .icon-alone {
     float:none;
-    width: 33%;
+    text-align: center;
+    width: 30%;
   }
 }
 
