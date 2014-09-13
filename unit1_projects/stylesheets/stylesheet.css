@@ -213,6 +213,10 @@ footer {
   line-height: 60px;
 }
 
+.icon-alone:hover {
+  color: coral;
+}
+
 .screen-reader-text { /* Reusable, toolbox kind of class */
   position: absolute;
   top: -9999px;
